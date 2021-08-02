@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portofolio♥</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="toggle-button.css">
+    <meta name="color-scheme" content="dark light">
+    </head>
+    <body>
+    <section>
+     <div class="circ"></div>
+        <header>
+        <a href="#"><img src="Meow-Logo-01.png" class="logo"></a>
+            <ul>
+            <li><a href="Project101.html" data-for-tab="1">Home</a></li>
+            <li><a href="menu.html"data-for-tab="2">Menu</a></li>
+            <li><a href="#New"data-for-tab="3">What's new</a></li>
+            <li><a href="#Contact"data-for-tab="4">Contact</a></li>
+        </ul>
+        <input type="checkbox" name="checkbox" class="cm-toggle chcolor" unchecked onclick='window.location.assign("tanytab.html")'/>
+        </header>
+        <!-- <button onclick="Darkfunction()">Toggle dark mode</button> -->
+        <div class="content">
+            <div class="textbox">
+            <h2>Welcome this is<br>my <span>Portofolio</span></h2>
+            <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. </p>
+            <a href="#">Learn More</a>
+            </div>
+            <div class="imgbox"><img src="Ohana.jpg" class="porto"></div>
+        </div>
+        <ul class="thumb">
+        <li><img src="Ohana.jpg" onclick="imgSlider('Ohana.jpg')"></li>
+        <li><img src="Heart%20copy.jpg" onclick="imgSlider('Heart%20copy.jpg')"></li>
+        <li><img src="3000%20copy.jpg" onclick="imgSlider('3000%20copy.jpg')"></li>
+        <li><img src="Trying.jpg" onclick="imgSlider('Trying.jpg')"></li>
+        </ul>
+        <ul class="sci">
+        <li><a href="https://www.facebook.com/MostafaMAli99"><img src="facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/mostafa.mohamed18"><img src="instagram.png"></a></li>
+            <li><a href="https://www.youtube.com/channel/UC17Hp3VcNzvLuPuNT7uxmnw"><img src="youtube.png"></a></li>
+            <li><a href="https://www.behance.net/MostafaMohamedAli"><img src="behance.png"></a></li>
+        </ul>
+        </section>
+        <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.porto').src=anything;
+        }
+        function Darkfunction(){
+            var darkm=document.body;
+            darkm.classList.toggle("darkmode");
+        }
+        </script>
+        <footer>ALL COPYRIGHTS RESERVED TO MOSTAFA MOHAMED ALI ©</footer>
+    </body>
+</html>
