@@ -14,7 +14,7 @@ section{
     display:flex ;
     justify-content:space-between;
     align-items:center;
-    background:#fff;
+    background:#333;
 
 }
 header{
@@ -41,7 +41,7 @@ header ul li{
 }
 header ul li a{
     display: inline-block;
-    color: #333;
+    color: #fff;
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
@@ -65,81 +65,46 @@ header ul li a:active{
     letter-spacing: 1px;
     text-decoration: none;
 }
-.content{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+
+.imgbox{
+    margin-left: 430px;
+    margin-right: auto;
+    width: 50%;
+    text-align: justify;
     align-items: center;
+    padding-top: 100px;
 }
-.content .textbox{
-    position: relative;
-    max-width: 600px;
+.imgbox img{
+    display: block;
+    margin: 0px;
+    max-width: 400px;  
+    border-radius: 45%;
+    box-shadow: 0 0 0 60px #41b3a3;
+    background-color: #41b3a3;
 }
-.content .textbox h2{
-    color: #333;
-    font-size: 3em;
-    line-height: 1.4em;
-    font-weight: 500;
-}
-.content .textbox h2 span{
+.textBox{
     color: #41b3a3;
-    font-size: 1.2em;
+    font-size: 1.6em;
     font-weight: 900;
     font-weight: 900;
+    margin-left: -100px;
+    margin-right:0px;
+    padding-top: 20px;
 }
-.content .textbox p{
-    color: #333;
-}
-.content .textbox a{
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
+.btn{
+    text-align: center;
+    margin-left: 70px;
+    margin-top: 40px;
     background:  #41b3a3;
     color: #fff;
-    border-radius: 40px;
+    border-radius: 400px;
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
-    
+    padding: 8px 8px;
 }
-.content .textbox a:hover{
+.btn:hover{
     background-color: cadetblue;
-}
-.content .imgbox{
-    width: 600px;
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
-    margin-top: 50px;
-    margin-left: 500px;
-}
-.content .imgbox img{
-    max-width: 340px;  
-    border-radius: 45%;
-}
-.thumb{
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
-    display: flex;
-}
-.thumb li{
-    list-style: none;
-    display: inline-block;
-    margin-bottom: 0px 20px;
-    margin: 0px 4px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.thumb li img{
-    border-radius: 30%;
-    max-width: 60px
-}
-.thumb li:hover{
-    transform: translateY(-15px);
 }
 .sci {
     position: absolute;
@@ -160,19 +125,15 @@ header ul li a:active{
     transform: scale(0.6);
     filter: invert(1); 
 }
-.circ
-{   position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #41b3a3;
-    clip-path: circle(500px at right 600px);
-}
-
 footer{
     text-align: center;
-    background-color: black;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
 
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
